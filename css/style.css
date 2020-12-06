@@ -457,18 +457,16 @@ img {
   fill: #AFB1B8;
 }
 
+.clients-list-item:hover,
+.clients-list-item:focus{
+  border: 1px solid var(--blue-color);
+  cursor: pointer;
+}
+
 .clients-list-item:hover .clients-list-icon,
 .clients-list-item:focus .clients-list-icon{
   fill: var(--blue-color);
 }
-
-
-
-/* .clients-list-link:hover .clients-list-icon,
-.clients-list-link:focus .clients-list-icon{
-  fill: var(--blue-color);
-} */
-
 
 /* !================================FOOTER====================== */
 
@@ -513,7 +511,6 @@ a[href^="https://goo.gl/maps/AcYd8yKNyFsXZPgV9"]
   color: var(--white-color);
 }
 
-
 .join{
 font-weight: 700;
 font-size: 14px;
@@ -522,10 +519,25 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--white-color);
 display: inline-block;
+margin-bottom: 20px;
 }
 
-.container-primary{
-  display: inline-block;
+.footer .container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.container-secondary{
+  margin-left: 70px;
+}
+
+.night{
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.white{
+  fill: var(--white-color);
 }
 
 /* !========================PORTFOLIO=============== */
