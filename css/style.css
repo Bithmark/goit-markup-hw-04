@@ -26,9 +26,9 @@ ol {
   padding: 0;
 }
 
-/* li, h1, h2, h3, p{
+li, h1, h2, h3, p{
     outline: 1px solid red;
-} */
+}
 
 h1,
 h2,
@@ -127,7 +127,7 @@ img {
   fill: var(--blue-color)
 }
 
-.container-mail{
+.header-mail{
   margin-right: 30px;
 }
 
@@ -424,50 +424,47 @@ img {
 
 /* !=====================CLIENT================ */
 
-.clients-title{
+.main_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 94px;
-  padding-bottom: 50px;
 }
 
-.clients-list-item{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px;
-  height: 90px;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
-  background-color:var(--white-color);
+.company-clients-list{
+    padding-bottom: 94px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
-.clients-list{
-  padding-bottom: 94px;
+.company-item:not(:last-child){
+   margin-right: 30px; 
 }
 
-.clients-list-link{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.company-link{
+    display: block;
+    width: 170px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 }
 
-.clients-list{
-  display: flex;
-  justify-content: space-between;
+.company-svg{
+fill:  #AFB1B8;
 }
 
-.clients-list-icon{
-  fill: #AFB1B8;
+.company-link:hover,
+.company-link:focus{
+    border: 1px solid var(--blue-color);
 }
 
-.clients-list-item:hover,
-.clients-list-item:focus{
-  border: 1px solid var(--blue-color);
-  cursor: pointer;
-}
-
-.clients-list-item:hover .clients-list-icon,
-.clients-list-item:focus .clients-list-icon{
-  fill: var(--blue-color);
+.company-link:hover .company-svg,
+.company-link:focus .company-svg {
+   fill: var(--blue-color);
 }
 
 /* !================================FOOTER====================== */
